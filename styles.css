@@ -43,11 +43,20 @@ header {
   position: relative;
 }
 
+#delete-ramen {
+  position: absolute;
+  left: 10px;
+
+  padding: .5em;
+  background: red;
+}
+
 .detail-image {
   height: 350px;
 }
 
 .name,
+
 .restaurant {
   position: absolute;
   left: 10px;
@@ -63,12 +72,21 @@ header {
   bottom: 20px;
 }
 
+.ramen-forms {
+display: flex;
+
+
+
+}
+
 form {
   margin: 1rem 0;
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right:20px;
+  margin-left:20px;
 }
 
 input,

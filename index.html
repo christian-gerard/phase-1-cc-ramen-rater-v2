@@ -14,27 +14,28 @@
   </header>
 
   
-  <div id="ramen-menu">
+  <div id="ramen-menu" class="ramen-menu">
   
   </div>
 
 
   <div id="ramen-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
+    <img id="ramen-image" class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+    <h2 id="ramen-name" class="name">Insert Name Here</h2>
+    <h3 id="ramen-restaurant" class="restaurant"></h3>
+    <button id="delete-ramen">X</button>
   </div>
 
   <h3>Rating:</h3>
   <p>
-    <span id='rating-display'>Insert rating here</span> / 10
+    <span id='rating-display'></span> / 10
   </p>
   <h3>Comment:</h3>
   <p id='comment-display'>
-    Insert comment here
+    
   </p>
 
-
+  <div class="ramen-forms"> 
   <form id="new-ramen">
     <h4>Add New Ramen</h4>
     <label for="new-name">Name: </label>
@@ -49,6 +50,16 @@
     <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
     <input type="submit" id='submit-button' value="Create" />
   </form>
+
+  <form id="update-ramen">
+    <h4>Update the Featured Ramen</h4>
+    <label for="rating">Rating: </label>
+    <input type="number" name="rating" id="new-rating" />
+    <label for="new-comment">Comment: </label>
+    <textarea name="new-comment" id="new-comment"></textarea>
+    <input type="submit" value="Update" />
+  </form>
+</div>
 
 </body>
 
